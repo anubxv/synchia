@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Synchia" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="actionOverflowButtonStyle">
+            @style/IconOverflow
+        </item>
+
+        <item name="android:searchViewStyle">@style/SearchViewStyle</item>
+    </style>
+
+    <style name="Theme.Synchia" parent="Base.Theme.Synchia" />
+
+    <style name="IconOverflow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@color/merrygreen</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView.ActionBar">
+        <!-- Tint for the search icon -->
+        <item name="android:searchIcon">@drawable/search</item>
+        <item name="android:tint">@color/merrygreen</item>
+    </style>
+
+</resources>

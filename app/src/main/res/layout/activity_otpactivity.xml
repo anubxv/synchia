@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.OTPActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+        <ImageView
+            android:id="@+id/feeling"
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:src="@drawable/otp_verify"
+            app:srcCompat="@drawable/otp_verify" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verifying"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/phoneLbl"
+                android:layout_width="241dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="+919987665670"
+                android:contentDescription="PhoneNumber"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:layout_marginTop="3dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="66dp"
+                tools:layout_editor_absoluteY="220dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="357dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="162dp"
+            android:orientation="vertical">
+
+
+            <com.mukeshsolanki.OtpView
+                android:id="@+id/otp_view"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:inputType="text"
+                android:itemBackground="@color/grey"
+                android:focusableInTouchMode="true"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                app:OtpHideLineWhenFilled="true"
+                app:OtpItemCount="6"
+                app:OtpItemSpacing="10dp"
+                app:OtpLineColor="@color/green"
+                app:OtpState_filled="true"
+                app:OtpViewType="line"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+            <Button
+                android:id="@+id/continueBtn"
+                android:layout_width="340dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="#D80F5F"
+                android:padding="15dp"
+                android:paddingTop="20dp"
+                android:text="Continue"
+                app:cornerRadius="7dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="342dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Enter the OTP to verify your Phone Number"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

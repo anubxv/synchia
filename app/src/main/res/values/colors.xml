@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#8B8585</color>
+    <color name="green">#2AA545</color>
+
+    <color name="maroon">#c84664</color>
+    <color name="peachpink">#FC9B7D</color>
+    <color name="bluemill">#053365</color>
+    <color name="merrygreen">#e5f7d1</color>
+
+
+
+
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "231650122037",
+    "project_id": "synchia-27",
+    "storage_bucket": "synchia-27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231650122037:android:85d6997de19a795c4e547c",
+        "android_client_info": {
+          "package_name": "com.example.synchia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoEkDBEYmrLRfTi6l0Xr-jvIQvDSgG7yI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
